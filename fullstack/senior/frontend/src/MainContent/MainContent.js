@@ -8,7 +8,7 @@ import PageContent from './PageContent/PageContent';
 const mainContent = () => (
     <div className='MainContent'>
         <SideBar />
-        <PageContent />
+        <PageContent agencyCode='XX2' />
     </div>
 )
 

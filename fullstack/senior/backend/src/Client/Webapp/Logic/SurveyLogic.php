@@ -178,9 +178,15 @@ class SurveyLogic {
                 switch ($answer['type']) {
                     case 'qcm':
                         {
-                            $jsonString .= '{"type": "' . $answer['type'] . '", "label": "' . $answer['label'] . '", "answers": [';
+                            $jsonString .= '{"type": "' . $answer['type'] . '", "label": "' . $answer['label'] . '", "questions": [';
                             foreach ($answer['answers'] as $oneQcmOption => $oneQcmAnswer) {
-                                $jsonString .= '{"' . $oneQcmOption . '": ' . $oneQcmAnswer . '},';
+                                $jsonString .= '"' . $oneQcmOption . '",';
+                            }
+                            $jsonString = substr($jsonString, 0, strlen($jsonString)-1);
+
+                            $jsonString .= '], "answers": [';
+                            foreach ($answer['answers'] as $oneQcmOption => $oneQcmAnswer) {
+                                $jsonString .= $oneQcmAnswer . ',';
                             }
                             $jsonString = substr($jsonString, 0, strlen($jsonString)-1);
                             $jsonString .= ']}';

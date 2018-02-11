@@ -17,3 +17,23 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
 }
+
+.DataVisualizationWidget.NumericWidget p {
+    font-size: 4em;
+    position: relative;
+    vertical-align: middle;
+    line-height: 80px;
+    color: #2571c1;
+    text-shadow: 2px 3px 7px #00000038;
+}
+
+.DataVisualizationWidget p ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.DataVisualizationWidget p li {
+    padding: 8px;
+    background: #dfe5ec;
+    margin: 3px;
+}
