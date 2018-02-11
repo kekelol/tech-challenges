@@ -1,0 +1,21 @@
+.SideBar {
+    display: inline-block;
+    width: 12%;
+    float: left;
+    background: #e8e8e8;
+    text-align: left;
+    padding: 40px 20px;
+    height: 100%;
+}
+
+.SideBar label {
+    color:#666;
+    display:block;
+    font-size:0.8em;
+    margin-left:5px;
+}
+
+.SideBar input {
+    margin: 8px 0px;
+    width: 100%;
+}

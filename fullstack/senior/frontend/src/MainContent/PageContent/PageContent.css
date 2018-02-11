@@ -1,0 +1,8 @@
+.PageContent {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    text-align: left;
+    padding: 40px 80px;
+    height: 100%;
+}

@@ -181,8 +181,8 @@ class SurveyLogic {
                             $jsonString .= '{"type": "' . $answer['type'] . '", "label": "' . $answer['label'] . '", "answers": [';
                             foreach ($answer['answers'] as $oneQcmOption => $oneQcmAnswer) {
                                 $jsonString .= '{"' . $oneQcmOption . '": ' . $oneQcmAnswer . '},';
-                                $jsonString = substr($jsonString, 0, strlen($jsonString));
                             }
+                            $jsonString = substr($jsonString, 0, strlen($jsonString)-1);
                             $jsonString .= ']}';
                             break;
                         }
